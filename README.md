@@ -44,6 +44,9 @@ $ npm run dev
 NameNode 上的前端默认占用8080端口启动
 
 ## 项目截图
-
+![list](https://github.com/gs19980115/dfs-microservice/raw/master/namenode-frontend/images/list.png)
+![grid](https://github.com/gs19980115/dfs-microservice/raw/master/namenode-frontend/images/grid.png)
+![服务下线，数据迁移之前](https://github.com/gs19980115/dfs-microservice/raw/master/namenode-frontend/images/before-migration.png)
+![数据迁移后](https://github.com/gs19980115/dfs-microservice/raw/master/namenode-frontend/images/after-migration.png)
 
 
