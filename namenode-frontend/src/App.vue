@@ -283,10 +283,6 @@ export default {
 
   methods : {
 
-    test() {
-      alert("hbj,knaer")
-    },
-
     // 视图控制
     viewFileSystem(){
       this.showDataNodeMonitor = false
@@ -567,17 +563,23 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  /* width: 900px;    这里可能要改 */
+  max-width: 1200px;
   color: #2c3e50;
-  /* margin-top: 60px; */
+  margin: auto;
 }
 </style>
 
 <style>
 
     .container {
-      max-width: 800px;
+      /* max-width: 800px; */
       /* margin:  0 auto; */
+            margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     }
 
   /* Container 布局容器 */
@@ -600,21 +602,12 @@ export default {
     color: #333;
     text-align: center;
     line-height: 30px;
-    height: 550px;
-    width: 1200px;
+    height: 600px;
+    min-width: 1000px;
   }
 
   body > .el-container {
     margin-bottom: 40px;
-  }
-
-  .el-container:nth-child(5) .el-aside,
-  .el-container:nth-child(6) .el-aside {
-    line-height: 260px;
-  }
-
-  .el-container:nth-child(7) .el-aside {
-    line-height: 320px;
   }
 
 
@@ -718,7 +711,4 @@ export default {
     display:block;
     float: right;
   }
-
-  .contain { width:200px; height:160px; margin:20px; padding:10px 20px 10px 20px; border:1px solid #FF6600; text-align:center}
-  .inner_contain { width:150px; height:30px; border:1px solid #009966}
 </style>
