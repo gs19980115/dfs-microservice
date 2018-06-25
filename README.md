@@ -15,6 +15,15 @@ $ ./mvnw spring-boot:run
 
 NameNode默认在8761端口启动
 
+可以在application.properties中修改配置，默认配置如下
+
+```properties
+# 设置文件块(Block)的大小,单位(B)
+block.default-size=40000
+# 设置默认副本数
+block.default-replicas=2
+```
+
 ### 2. 启动多个DataNode实例
 
 ```Shell
@@ -24,14 +33,6 @@ $ ./mvnw spring-boot:run -Dserver.port=8084
 $ ./mvnw spring-boot:run -Dserver.port=8086
 ```
 
-可以在application.properties中修改DataNode的配置，默认配置如下
-
-```properties
-# 设置文件块(Block)的大小,单位(B)
-block.size=40000
-# 设置默认副本数
-block.default-replicas=2
-```
 
 ### 3. 启动NameNode上的前端
 
